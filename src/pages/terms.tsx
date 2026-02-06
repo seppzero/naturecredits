@@ -1,0 +1,164 @@
+import React from 'react'
+import { Link } from 'gatsby'
+import Layout from '../components/Layout'
+
+const TermsPage: React.FC = () => {
+  return (
+    <Layout>
+      <section className="section-padding bg-stone-50 min-h-screen pt-24 sm:pt-32">
+        <div className="container-80 max-w-4xl mx-auto">
+          {/* Back button */}
+          <Link 
+            to="/" 
+            className="inline-flex items-center gap-2 text-stone-600 hover:text-[#A8C95F] transition-colors mb-8 group"
+          >
+            <svg 
+              className="w-5 h-5 transition-transform group-hover:-translate-x-1" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            <span className="font-medium">Back to Home</span>
+          </Link>
+
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-stone-900 mb-6 sm:mb-8">
+            Legal Disclosure / Impressum
+          </h1>
+          
+          <p className="text-lg sm:text-xl text-stone-500 mb-12 sm:mb-16">
+            Below you will find our legal notice in German and English.<br />
+            Nachfolgend finden Sie unser Impressum in deutscher und englischer Sprache.
+          </p>
+
+          <div className="space-y-12 sm:space-y-16">
+            {/* German Section */}
+            <div>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-stone-900 mb-6 sm:mb-8">
+                Impressum
+              </h2>
+              
+              <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-sm">
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Firmeninformation</h3>
+                    <div className="text-lg text-stone-700 leading-relaxed space-y-1">
+                      <p><strong>Nature Credits UG (haftungsbeschränkt)</strong></p>
+                      <p>Rehmstr. 10</p>
+                      <p>82211 Herrsching, Deutschland</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Vertreten durch:</h3>
+                    <p className="text-lg text-stone-700">Simon Meitz</p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Kontakt:</h3>
+                    <div className="text-lg text-stone-700 space-y-1">
+                      <p>Telefon: <a href="tel:+4917646608493" className="text-[#A8C95F] hover:text-[#98B94F] transition-colors">+49 176 46608493</a></p>
+                      <p>E-Mail: <a href="mailto:simon.meitz@naturecredits.earth" className="text-[#A8C95F] hover:text-[#98B94F] transition-colors">simon.meitz@naturecredits.earth</a></p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Registereintrag:</h3>
+                    <div className="text-lg text-stone-700 space-y-1">
+                      <p>Eintragung im Handelsregister.</p>
+                      <p>Registergericht: Amtsgericht München</p>
+                      <p>Handelsregisternummer: HRB 305555</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:</h3>
+                    <p className="text-lg text-stone-700">Nicht anwendbar / derzeit in Beantragung.</p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</h3>
+                    <div className="text-lg text-stone-700 space-y-1">
+                      <p>Simon Meitz</p>
+                      <p>Rehmstr. 10</p>
+                      <p>82211 Herrsching</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Verbraucherstreitbeilegung / Universalschlichtungsstelle:</h3>
+                    <p className="text-lg text-stone-700">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* English Section */}
+            <div>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-stone-900 mb-6 sm:mb-8">
+                Legal Notice
+              </h2>
+              
+              <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-sm">
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Company Information</h3>
+                    <div className="text-lg text-stone-700 leading-relaxed space-y-1">
+                      <p><strong>Nature Credits UG (limited liability)</strong></p>
+                      <p>Rehmstr. 10</p>
+                      <p>82211 Herrsching, Germany</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Represented by:</h3>
+                    <p className="text-lg text-stone-700">Simon Meitz</p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Contact:</h3>
+                    <div className="text-lg text-stone-700 space-y-1">
+                      <p>Phone: <a href="tel:+4917646608493" className="text-[#A8C95F] hover:text-[#98B94F] transition-colors">+49 176 46608493</a></p>
+                      <p>Email: <a href="mailto:simon.meitz@naturecredits.earth" className="text-[#A8C95F] hover:text-[#98B94F] transition-colors">simon.meitz@naturecredits.earth</a></p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Commercial Register Entry:</h3>
+                    <div className="text-lg text-stone-700 space-y-1">
+                      <p>Registered at: Local Court of Munich (Amtsgericht München)</p>
+                      <p>Commercial Register Number: HRB 305555</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">VAT Identification Number according to §27 a German VAT Act:</h3>
+                    <p className="text-lg text-stone-700">Not applicable / currently being registered.</p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Responsible for content in accordance with § 18 (2) MStV:</h3>
+                    <div className="text-lg text-stone-700 space-y-1">
+                      <p>Simon Meitz</p>
+                      <p>Rehmstr. 10</p>
+                      <p>82211 Herrsching, Germany</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3">Consumer Dispute Resolution / Universal Arbitration Board:</h3>
+                    <p className="text-lg text-stone-700">We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </Layout>
+  )
+}
+
+export default TermsPage
